@@ -10,8 +10,8 @@
 <a href="https://orcid.org/0009-0005-8586-3650">
   <img src="https://img.shields.io/badge/ORCID-0009--0005--8586--3650-1C7552?style=for-the-badge&logo=orcid&logoColor=E4DDD3&labelColor=090D14" alt="ORCID" />
 </a>
-<a href="https://doi.org/10.5281/zenodo.PLACEHOLDER">
-  <img src="https://img.shields.io/badge/DOI-Zenodo%20Pending-C46C2D?style=for-the-badge&logo=doi&logoColor=E4DDD3&labelColor=090D14" alt="DOI pending" />
+<a href="https://doi.org/10.5281/zenodo.20217886">
+  <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20217886-C46C2D?style=for-the-badge&logo=doi&logoColor=E4DDD3&labelColor=090D14" alt="DOI 10.5281/zenodo.20217886" />
 </a>
 
 <br/><br/>
@@ -36,7 +36,7 @@
 > **Research identity:** [https://orcid.org/0009-0005-8586-3650](https://orcid.org/0009-0005-8586-3650)  
 > **Repository:** [https://github.com/DeontewattsV1/Wildfire-The-Architecture-of-Surrender](https://github.com/DeontewattsV1/Wildfire-The-Architecture-of-Surrender)  
 > **Live interface:** [https://deontewattsv1.github.io/Wildfire-The-Architecture-of-Surrender/](https://deontewattsv1.github.io/Wildfire-The-Architecture-of-Surrender/)  
-> **DOI placeholder:** [https://doi.org/10.5281/zenodo.PLACEHOLDER](https://doi.org/10.5281/zenodo.PLACEHOLDER)
+> **DOI:** [https://doi.org/10.5281/zenodo.20217886](https://doi.org/10.5281/zenodo.20217886)
 
 ---
 
@@ -105,6 +105,8 @@
 ```text
 /
 ├─ README.md
+├─ CITATION.cff
+├─ .zenodo.json
 └─ docs/
    ├─ index.html
    └─ .nojekyll
@@ -137,20 +139,22 @@ https://deontewattsv1.github.io/Wildfire-The-Architecture-of-Surrender/
 
 ---
 
-## DOI release sequence
+## DOI release status
 
-1. Push source files to GitHub.
-2. Connect the repository to Zenodo.
-3. Create a release, for example `v0.1.0`.
-4. Copy the minted DOI.
-5. Replace `10.5281/zenodo.PLACEHOLDER` everywhere.
-6. Add the DOI-backed work to ORCID.
+The repository is now aligned to the minted DOI:
+
+```text
+10.5281/zenodo.20217886
+https://doi.org/10.5281/zenodo.20217886
+```
+
+Next: add the DOI-backed work to ORCID and keep future GitHub releases synchronized with Zenodo versions.
 
 ---
 
 ## Citation
 
-Watts, Deonte. (2026). *Wildfire: The Architecture of Surrender*. Canonical Research Repository.
+Watts, Deonte. (2026). *Wildfire: The Architecture of Surrender*. Canonical Research Repository. https://doi.org/10.5281/zenodo.20217886
 
 ```bibtex
 @misc{watts2026wildfire,
@@ -158,7 +162,7 @@ Watts, Deonte. (2026). *Wildfire: The Architecture of Surrender*. Canonical Rese
   title        = {Wildfire: The Architecture of Surrender},
   year         = {2026},
   publisher    = {Canonical Research Repository},
-  doi          = {10.5281/zenodo.PLACEHOLDER},
+  doi          = {10.5281/zenodo.20217886},
   url          = {https://github.com/DeontewattsV1/Wildfire-The-Architecture-of-Surrender}
 }
 ```
@@ -170,12 +174,12 @@ Watts, Deonte. (2026). *Wildfire: The Architecture of Surrender*. Canonical Rese
 
 <br/>
 
-- [ ] Replace `10.5281/zenodo.PLACEHOLDER` after first Zenodo release.
+- [x] Replace Zenodo DOI placeholder.
 - [ ] Confirm final author display name and affiliation.
 - [ ] Add a release tag such as `v0.1.0`.
 - [ ] Enable GitHub Pages from `/docs`.
 - [ ] Add custom domain or Cloudflare route if desired.
-- [ ] Update all DOI links after publication.
+- [ ] Add the DOI-backed work to ORCID.
 - [ ] Add preview screenshots or GIFs to this README after the live page renders.
 
 </details>
