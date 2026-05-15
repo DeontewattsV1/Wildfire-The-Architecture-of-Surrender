@@ -1,0 +1,40 @@
+{
+  "title": "Wildfire: The Architecture of Surrender",
+  "description": "A canonical theological-poetic manuscript and research identity workflow connecting GitHub, Zenodo, DOI metadata, ORCID, and a public interactive GitHub Pages interface.",
+  "creators": [
+    {
+      "name": "Watts, Deonte",
+      "orcid": "0009-0005-8586-3650",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "keywords": [
+    "theological poetics",
+    "research identity",
+    "DOI",
+    "ORCID",
+    "Zenodo",
+    "metadata",
+    "GitHub Pages"
+  ],
+  "license": "cc-by-4.0",
+  "upload_type": "publication",
+  "publication_type": "article",
+  "access_right": "open",
+  "doi": "10.5281/zenodo.20217886",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/DeontewattsV1/Wildfire-The-Architecture-of-Surrender",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://orcid.org/0009-0005-8586-3650",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    }
+  ],
+  "communities": [],
+  "version": "0.1.0",
+  "language": "eng"
+}
