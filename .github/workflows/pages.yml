@@ -37,7 +37,7 @@ jobs:
         # Use the latest version of upload-pages-artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./public    # <<--- CHANGE this to the folder that contains the built site (e.g. ./docs, ./build, ./dist)
+          path: ./README    # <<--- CHANGE this to the folder that contains the built site (e.g. ./docs, ./build, ./dist)
 
   deploy:
     needs: build
