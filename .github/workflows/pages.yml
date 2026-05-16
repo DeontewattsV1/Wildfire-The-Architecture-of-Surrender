@@ -1,4 +1,4 @@
-# GitHub Pages deployment workflow — update `path:` to your site's output directory 
+# GitHub Pages deployment workflow — update `path:` to your site's output directory
 name: Deploy GitHub Pages
 
 on:
