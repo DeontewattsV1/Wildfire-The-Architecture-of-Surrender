@@ -1,10 +1,9 @@
-# GitHub Pages deployment workflow — update `path:` to your site's output directory
 name: Deploy GitHub Pages
 
 on:
   push:
     branches:
-      - main    # change if your default branch is different (e.g., master)
+      - main
   workflow_dispatch: {}
 
 jobs:
@@ -22,22 +21,67 @@ jobs:
       - name: Set up Node.js (optional)
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '18'
 
       - name: Install dependencies (if a Node project)
         run: |
-          if [ -f package-lock.json ]; then npm ci; elif [ -f yarn.lock ]; then npm ci; else echo "No lockfile found, skipping install"; fi
+          # Prefer lockfile commands; ensure Yarn projects run yarn install (not npm ci)
+          if [ -f package-lock.json ]; then
+            npm ci
+          elif [ -f yarn.lock ]; then
+            # Try a frozen install, fall back to regular install
+            yarn install --frozen-lockfile || yarn install
+          elif [ -f package.json ]; then
+            npm install
+          else
+            echo "No lockfile or package.json found, skipping install"
+          fi
 
       - name: Build site
         run: |
-          # Adjust these commands to match your site generator (Hugo, Jekyll, Sphinx, etc.)
-          if [ -f package.json ]; then npm run build --if-present; fi
+          # Adjust these commands to match your site generator if not Node-based
+          if [ -f package.json ]; then
+            npm run build --if-present
+          fi
+          # Examples (uncomment if using):
+          # if using Hugo: hugo -v
+          # if using Jekyll: bundle exec jekyll build
+
+      - name: Show build output for debugging
+        run: |
+          echo "Repository root:"
+          ls -la
+          echo "Top-level directories:"
+          ls -la . | sed -n '1,200p'
+          echo "Check common site output directories (public, dist, build, docs, .next/out):"
+          for d in public dist build docs .next/out; do
+            echo "---- $d ----"
+            ls -la "$d" || echo "$d not present"
+          done
+
+      - name: Detect site output directory
+        id: detect
+        run: |
+          # Search common output dirs - add or remove choices as needed
+          if [ -d "./public" ]; then
+            echo "site_path=public" >> $GITHUB_OUTPUT
+          elif [ -d "./dist" ]; then
+            echo "site_path=dist" >> $GITHUB_OUTPUT
+          elif [ -d "./build" ]; then
+            echo "site_path=build" >> $GITHUB_OUTPUT
+          elif [ -d "./docs" ]; then
+            echo "site_path=docs" >> $GITHUB_OUTPUT
+          elif [ -d "./.next/out" ]; then
+            echo "site_path=.next/out" >> $GITHUB_OUTPUT
+          else
+            echo "No site output directory found. Ensure your build step created a directory such as public, dist, build, or docs."
+            exit 1
+          fi
 
       - name: Upload Pages artifact
-        # Use the latest version of upload-pages-artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./README    # <<--- CHANGE this to the folder that contains the built site (e.g. ./docs, ./build, ./dist)
+          path: ${{ steps.detect.outputs.site_path }}
 
   deploy:
     needs: build
