@@ -13,7 +13,20 @@
 <a href="https://doi.org/10.5281/zenodo.20217886">
   <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20217886-C46C2D?style=for-the-badge&logo=doi&logoColor=E4DDD3&labelColor=090D14" alt="DOI 10.5281/zenodo.20217886" />
 </a>
+## Support my work
 
+You can support me via any of the links below:
+
+[![Patreon](https://img.shields.io/badge/Patreon-Donate-FF424D?logo=patreon&logoColor=white)](https://www.patreon.com/cw/GetitD)
+[![Open Collective](https://img.shields.io/badge/Open%20Collective-Support-FF6F00?logo=open-collective&logoColor=white)](https://opencollective.com/deontewattsv1)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Coffee-29ABE0?logo=ko-fi&logoColor=white)](https://ko-fi.com/deontewattsv1)
+[![Tidelift](https://img.shields.io/badge/Tidelift-Support-0052A7?logo=tidelift&logoColor=white)](https://sonarcloud.io/organizations/deontewattsv1/)
+[![LFX Crowdfunding](https://img.shields.io/badge/LFX-Crowdfunding-2B6CB0)](https://crowdfunding.lfx.linuxfoundation.org/deontewattssV1)
+[![Liberapay](https://img.shields.io/badge/Liberapay-Donate-1D9D74?logo=liberapay&logoColor=white)](https://liberapay.com/DeontewattsV1/)
+[![IssueHunt](https://img.shields.io/badge/IssueHunt-Bounties-24292E?logo=github&logoColor=white)](https://issuehunt.io/profiles/deontewattsv1)
+[![Polar](https://img.shields.io/badge/Polar-Dashboard-4B5563)](https://polar.sh/dashboard/deonte-watts)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/deontewattsv1)
+[![thanks.dev](https://img.shields.io/badge/thanks.dev-Say%20Thanks-3DA639?logo=github&logoColor=white)](https://thanks.dev/e/gh/deontewattsv1)
 <br/><br/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=24&duration=2800&pause=900&color=E4DDD3&center=true&vCenter=true&width=920&lines=GitHub-safe+research+portal;DOI+%E2%86%92+ORCID+%E2%86%92+Zenodo+%E2%86%92+OpenAIRE+workflow;Interactive+holographic+GitHub+Pages+interface;GoodShyt+%C3%97+Architect%27s+Signal" alt="Typing SVG" />
