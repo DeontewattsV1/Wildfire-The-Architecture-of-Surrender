@@ -13,8 +13,10 @@
 <a href="https://doi.org/10.5281/zenodo.20217886">
   <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20217886-C46C2D?style=for-the-badge&logo=doi&logoColor=E4DDD3&labelColor=090D14" alt="DOI 10.5281/zenodo.20217886" />
 </a>
+
 ## Support my work
 You can support me via any of the links below:
+
 [![Patreon](https://img.shields.io/badge/Patreon-Donate-FF424D?logo=patreon&logoColor=white)](https://www.patreon.com/cw/GetitD)
 [![Open Collective](https://img.shields.io/badge/Open%20Collective-Support-FF6F00?logo=open-collective&logoColor=white)](https://opencollective.com/deontewattsv1)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Coffee-29ABE0?logo=ko-fi&logoColor=white)](https://ko-fi.com/deontewattsv1)
