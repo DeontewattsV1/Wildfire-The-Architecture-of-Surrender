@@ -30,11 +30,9 @@ jobs:
               return;
             }
 
-            // Get the commit SHA
             const prSha = context.payload.pull_request?.head?.sha ||
                          context.payload.workflow_run?.head_sha;
 
-            // Get combined status for the commit
             const { data: status } = await github.rest.repos.getCombinedStatusForRef(
               context.repo.owner,
               context.repo.repo,
@@ -43,15 +41,12 @@ jobs:
 
             console.log('Status state:', status.state);
 
-            // Check if we're waiting on required checks
             if (status.state === 'pending') {
-              // Wait for checks to complete
               const pendingChecks = status.statuses.filter(s => s.state === 'pending');
               console.log('Pending checks:', pendingChecks.map(c => c.context).join(', '));
               process.exit(1);
             }
 
-            // Only proceed if all checks passed
             if (status.state !== 'success') {
               console.log('Checks not passed, state:', status.state);
               process.exit(1);
